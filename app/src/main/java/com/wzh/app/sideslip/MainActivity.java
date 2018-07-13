@@ -22,6 +22,7 @@ import com.zaaach.toprightmenu.TopRightMenu;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class MainActivity extends BaseActivity implements View.OnClickListener {
     private SystemBarTintManager tintManager;
     private DrawerLayout drawerLayout;
@@ -41,7 +42,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         drawerLayout = (DrawerLayout) findViewById(R.id.activity_na);
         navigationView = (NavigationView) findViewById(R.id.nav);
         menu= (ImageView) findViewById(R.id.main_menu);
-        View headerView = navigationView.getHeaderView(0);//获取头布局
+        //获取头布局
+        View headerView = navigationView.getHeaderView(0);
         menu.setOnClickListener(this);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -74,8 +76,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.more :
                 mTopRightMenu = new TopRightMenu(MainActivity.this);
                 final List<com.zaaach.toprightmenu.MenuItem> menuItems = new ArrayList<>();
-                menuItems.add(new com.zaaach.toprightmenu.MenuItem(R.mipmap.multichat,"创建群聊"));
-                menuItems.add(new com.zaaach.toprightmenu.MenuItem(R.mipmap.addmember,"加好友/群"));
+                 menuItems.add(new com.zaaach.toprightmenu.MenuItem(R.mipmap.addmember,"加好友/群"));
                 menuItems.add(new com.zaaach.toprightmenu.MenuItem(R.mipmap.qr_scan,"扫一扫"));
                 mTopRightMenu
                         .setHeight(680)
@@ -92,7 +93,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                         })
                         .showAsDropDown(morebtn, -225, 0);
                 break;
-
+                default:
+                    break;
         }
     }
 }
