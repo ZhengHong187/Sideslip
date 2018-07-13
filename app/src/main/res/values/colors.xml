@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    #5CC2F8<color name="colorPrimary">#5dc9e4</color>
+    <color name="colorPrimaryDark">#5CC2F8</color>
+    <color name="colorAccent">#5CC2F8</color>
+    <color name="mainColor">#5CC2F8</color>
+    <color name="blue_01">#5dc9e4</color>
+    <color name="blue_02">#5dc9e4</color>
+    <color name="blue_03">#5dc9e4</color>
+    <color name="shape1">#5d8df7</color>
+    <color name="shape2">#5EB9F8</color>
+    <color name="shape3">#5CC2F8</color>
+</resources>
