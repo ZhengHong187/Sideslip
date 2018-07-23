@@ -10,4 +10,8 @@
     <color name="shape1">#5d8df7</color>
     <color name="shape2">#5EB9F8</color>
     <color name="shape3">#5CC2F8</color>
+    <color name="baise">#fff</color>
+    <color name="orange">#e3b463</color>
+    <color name="green">#72e363</color>
+    <color name="red" >#e21009</color>
 </resources>
